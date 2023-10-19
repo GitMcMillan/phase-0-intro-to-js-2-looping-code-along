@@ -1,25 +1,36 @@
 // Code your solutions in this file
 
+// have an array of names 
+//consolelog a thank you message for each name on array
+// 
+//
+
+const namesList = ["Guadalupe", "Ollie", "Aki"]
 
 
 
 
-const cards = ["Guadalupe", "Ollie", "Aki"]
-
-function writeCards(cards) {
-  const messages = []
-  for (let i = 0; i < cards.length; i++) {
-        console.log(`Thank you, ${cards[i]}, for the wonderful surprise gift!`)
-        messages.push(`Thank you, ${cards[i]}, for the wonderful surprise gift!`)
-
-    }
 
 
 
-    return messages;
-}
+function writeCards() {
+  const cards = []
 
-writeCards(cards);
+  for (let i = 0; i < namesList.length; i++) {
+
+
+    cards.push(`Thank you, ${namesList[i]}, for the wonderful surprise gift!`)
+
+  };
+  return cards;
+};
+
+
+
+
+
+
+
 
 
 function countDown() {
@@ -28,3 +39,10 @@ function countDown() {
     console.log(countdown--)
   }
 }
+
+// function countDown(num) {
+//   for (let i = num; i > -1; i--) {
+//     console.log([i])
+//   };
+
+// };
